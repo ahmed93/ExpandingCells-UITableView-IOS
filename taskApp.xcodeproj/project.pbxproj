@@ -9,11 +9,13 @@
 /* Begin PBXBuildFile section */
 		A751D6BA1AC40DDC005F0305 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A751D6B91AC40DDC005F0305 /* main.m */; };
 		A751D6BD1AC40DDC005F0305 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A751D6BC1AC40DDC005F0305 /* AppDelegate.m */; };
-		A751D6C01AC40DDC005F0305 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A751D6BF1AC40DDC005F0305 /* ViewController.m */; };
 		A751D6C31AC40DDC005F0305 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A751D6C11AC40DDC005F0305 /* Main.storyboard */; };
 		A751D6C51AC40DDC005F0305 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A751D6C41AC40DDC005F0305 /* Images.xcassets */; };
 		A751D6C81AC40DDC005F0305 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A751D6C61AC40DDC005F0305 /* LaunchScreen.xib */; };
 		A751D6D41AC40DDC005F0305 /* taskAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A751D6D31AC40DDC005F0305 /* taskAppTests.m */; };
+		A751D6DF1AC40E04005F0305 /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A751D6DE1AC40E04005F0305 /* TableViewController.m */; };
+		A751D6E21AC40FAA005F0305 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = A751D6E11AC40FAA005F0305 /* Person.m */; };
+		A7D7416F1AC4233C005A4655 /* PersonCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A7D7416E1AC4233C005A4655 /* PersonCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,14 +34,18 @@
 		A751D6B91AC40DDC005F0305 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A751D6BB1AC40DDC005F0305 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A751D6BC1AC40DDC005F0305 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		A751D6BE1AC40DDC005F0305 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		A751D6BF1AC40DDC005F0305 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		A751D6C21AC40DDC005F0305 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A751D6C41AC40DDC005F0305 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		A751D6C71AC40DDC005F0305 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		A751D6CD1AC40DDC005F0305 /* taskAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = taskAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A751D6D21AC40DDC005F0305 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A751D6D31AC40DDC005F0305 /* taskAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = taskAppTests.m; sourceTree = "<group>"; };
+		A751D6DD1AC40E04005F0305 /* TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
+		A751D6DE1AC40E04005F0305 /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
+		A751D6E01AC40FAA005F0305 /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		A751D6E11AC40FAA005F0305 /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		A7D7416D1AC4233C005A4655 /* PersonCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonCell.h; sourceTree = "<group>"; };
+		A7D7416E1AC4233C005A4655 /* PersonCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,14 +87,19 @@
 		A751D6B61AC40DDC005F0305 /* taskApp */ = {
 			isa = PBXGroup;
 			children = (
+				A7D7416C1AC42327005A4655 /* New Group */,
 				A751D6BB1AC40DDC005F0305 /* AppDelegate.h */,
 				A751D6BC1AC40DDC005F0305 /* AppDelegate.m */,
-				A751D6BE1AC40DDC005F0305 /* ViewController.h */,
-				A751D6BF1AC40DDC005F0305 /* ViewController.m */,
 				A751D6C11AC40DDC005F0305 /* Main.storyboard */,
 				A751D6C41AC40DDC005F0305 /* Images.xcassets */,
 				A751D6C61AC40DDC005F0305 /* LaunchScreen.xib */,
 				A751D6B71AC40DDC005F0305 /* Supporting Files */,
+				A751D6DD1AC40E04005F0305 /* TableViewController.h */,
+				A751D6DE1AC40E04005F0305 /* TableViewController.m */,
+				A751D6E01AC40FAA005F0305 /* Person.h */,
+				A751D6E11AC40FAA005F0305 /* Person.m */,
+				A7D7416D1AC4233C005A4655 /* PersonCell.h */,
+				A7D7416E1AC4233C005A4655 /* PersonCell.m */,
 			);
 			path = taskApp;
 			sourceTree = "<group>";
@@ -117,6 +128,13 @@
 				A751D6D21AC40DDC005F0305 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A7D7416C1AC42327005A4655 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "New Group";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -219,8 +237,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A751D6C01AC40DDC005F0305 /* ViewController.m in Sources */,
+				A7D7416F1AC4233C005A4655 /* PersonCell.m in Sources */,
 				A751D6BD1AC40DDC005F0305 /* AppDelegate.m in Sources */,
+				A751D6DF1AC40E04005F0305 /* TableViewController.m in Sources */,
+				A751D6E21AC40FAA005F0305 /* Person.m in Sources */,
 				A751D6BA1AC40DDC005F0305 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -414,6 +434,7 @@
 				A751D6D91AC40DDC005F0305 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A751D6DA1AC40DDC005F0305 /* Build configuration list for PBXNativeTarget "taskAppTests" */ = {
 			isa = XCConfigurationList;
@@ -422,6 +443,7 @@
 				A751D6DC1AC40DDC005F0305 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
